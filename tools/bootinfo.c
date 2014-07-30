@@ -273,6 +273,7 @@ void print_boot0_private_head(boot0_private_head_t *hdr, loader_type type)
 
 void print_script(void *script)
 {
+  script = script;
 }
 
 void print_core_para(boot_core_para_t *core)

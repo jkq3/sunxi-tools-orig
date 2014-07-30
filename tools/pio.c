@@ -315,6 +315,7 @@ static void cmd_clean(char *buf)
 
 static int do_command(char *buf, const char **args, int argc)
 {
+	argc = argc;
 	const char *command = args[0];
 	if (*command == 'P') {
 		if (strchr(command, '<'))

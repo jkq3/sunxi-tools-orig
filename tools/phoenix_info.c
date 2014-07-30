@@ -43,7 +43,7 @@ static int save_part(struct phoenix_ptable *ptable, int part, const char *dest, 
 {
 	int l = strlen(dest) + 16;
 	char outname[l];
-	FILE *out;
+	FILE *out = NULL;
 	char *buf = NULL;
 	int ret = 0;
 	snprintf(outname, l, dest, part);
